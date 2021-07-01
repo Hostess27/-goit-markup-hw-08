@@ -21,14 +21,7 @@ ul {
     padding: 0;
     margin: 0;
 }
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
 
-    margin-left: auto;
-    margin-right: auto;
-}
 .button {
     cursor: pointer;
     outline: none;
@@ -36,16 +29,7 @@ ul {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.section{
-    .no-padding {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
+
 
 h1,
 h2,
@@ -75,7 +59,7 @@ svg {
     margin: -1px;
     border: 0;
     padding: 0;
-
+    
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
