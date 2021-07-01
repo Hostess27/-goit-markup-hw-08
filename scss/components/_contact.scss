@@ -18,6 +18,13 @@
 
 .contact__list {
     display: flex;
+    
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .tablet {
+        display: none;
+    }
 }
 
 .contact__item {

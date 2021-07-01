@@ -1,6 +1,14 @@
 .nav {
     @extend %flex;
+
+   
 }
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .tablet {
+        display: none;
+    }
+}
+
 
 .nav__list {
     display: flex;
@@ -43,7 +51,6 @@
     }
 }
 
-
 .auth-nav {
     @extend %flex;
     margin-left: auto;
@@ -54,4 +61,3 @@
         margin-right: 50px;
     }
 }
-
