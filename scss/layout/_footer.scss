@@ -39,11 +39,27 @@
 }
 
 .adds {
-    margin-right: 70px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
 }
 
 .adds-like {
     font-style: normal;
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .adds-like__tittle {
     display: inline-block;
@@ -70,13 +86,31 @@
 }
 
 .flex-footer {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 }
 
 .plea {
-    margin-right: 93px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        margin-bottom: 0;
+    }
 }
 
 .plea__title {
@@ -88,6 +122,14 @@
 
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+.input {
+    @media screen and (min-width: 0px) and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .input__tittle {
@@ -105,4 +147,5 @@
     text-transform: uppercase;
 
     color: var(--white);
+
 }

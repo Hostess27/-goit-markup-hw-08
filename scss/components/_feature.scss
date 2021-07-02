@@ -4,15 +4,25 @@
 
 .feature__list {
     // display: flex;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
     }
 }
 
 .feature__item {
-    // &:not(:last-child) {
-    //     margin-right: 30px;
-    // }
+    
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
     flex-basis: 270px;
 
     @media screen and (min-width: 768px) {
@@ -50,6 +60,11 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+
 }
 .features__info {
     font-size: 14px;

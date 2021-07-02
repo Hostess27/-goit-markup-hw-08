@@ -1,8 +1,25 @@
 .hero {
     background-color: var(--secondary-background-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+
+    @media screen and (min-width: 0px){
+        background-size: cover;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+       
+    background-size: cover;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        
+    }
 
     background-image: linear-gradient(
             to right,
@@ -15,13 +32,27 @@
 }
 
 .hero__title {
-    color: var(--white);
-    font-size: 44px;
-    line-height: 1.36;
     font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--white);
     margin: 0 auto 30px;
 
-    max-width: 696px;
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin: 0 auto 30px;
+        text-align: center;
+        max-width: 696px;
+    }
+
+    @media screen and (min-width: 0px){
+        margin-bottom: 20px;
+    }
 }
