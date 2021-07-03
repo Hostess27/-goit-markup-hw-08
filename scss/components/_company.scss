@@ -1,65 +1,83 @@
 .company {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-	height: 300px;
-
-
-	&:not(:last-child){
-		margin-right: 30px;
-	}
-	
-
-	@media screen and (min-width: 768px) {
-		.company__list {
-            &:nth-last-child(2n){
-				margin-bottom: 30px;
-			}
-			&:nth-last-child(n + 3){
-				margin-right: 30px;
-			}
-			
-        } 
-		align-content: center;
-		justify-content: center;
+    @media screen and (min-width: 0px) and (max-width: 479px) {
+        text-align: center;
+       
+        .company__list {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            
+            
+        }
+        .company__link{
+            width: 210px;
+        }
     }
 
+    @media screen and (min-width: 480px) {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        height: 300px;
+        .company__link{
+            width: 210px;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        align-content: center;
+        .company__list {
+            &:not(:nth-child(3n)){
+                margin-right: 30px;
+            }
+            &:nth-child(-n + 3){
+                margin-bottom: 30px;
+            }
+            
+        }
+        .company__link{
+            width: 226px;
+        }
+       
+    }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-		flex-wrap: nowrap;
-		flex-direction: row;
-		align-items: stretch;
-		height: 50%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: stretch;
+        height: 50%;
         .company__list {
             &:not(:last-child) {
                 margin-right: 30px;
             }
-			
         }
+        .company__link{
+            width: 170px;
+        }
+       
     }
-	
-
-	
 }
 
 .company__link {
     display: inline-flex;
     border: 1px solid var(--blue-gray);
-    width: 170px;
+   
     height: 92px;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
 
-	&:not(:last-child){
-		margin-right: 30px;
-		margin-bottom: 30px;
-	}
+    &:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
     &:hover {
         .company__icon {
             fill: var(--accent-color);
