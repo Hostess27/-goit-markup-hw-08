@@ -18,9 +18,9 @@
 
 .feature__item {
     flex-basis: 270px;
-    
+
     @media screen and (max-width: 1199px) {
-        &:nth-child(-n + 2){
+        &:nth-child(-n + 2) {
             margin-bottom: 30px;
         }
     }
@@ -36,7 +36,7 @@
             margin-right: 30px;
         }
         display: flex;
-        flex-basis: calc((100% - 60px) / 4)
+        flex-basis: calc((100% - 60px) / 4);
     }
 }
 
@@ -64,7 +64,6 @@
     @media screen and (max-width: 768px) {
         text-align: center;
     }
-
 }
 .features__info {
     font-size: 14px;
