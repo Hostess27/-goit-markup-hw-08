@@ -1370,8 +1370,8 @@ svg {
       flex-basis: 270px;
 }
 
-@media screen and (max-width: 768px) {
-  .feature__item:not(:last-child) {
+@media screen and (max-width: 1199px) {
+  .feature__item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }

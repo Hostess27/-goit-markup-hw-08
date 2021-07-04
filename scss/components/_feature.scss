@@ -19,8 +19,8 @@
 .feature__item {
     flex-basis: 270px;
     
-    @media screen and (max-width: 768px) {
-        &:not(:last-child){
+    @media screen and (max-width: 1199px) {
+        &:nth-child(-n + 2){
             margin-bottom: 30px;
         }
     }
