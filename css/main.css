@@ -1340,7 +1340,19 @@ svg {
 }
 
 .feature {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature.section {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1615,10 +1627,15 @@ svg {
             align-items: center;
     -ms-flex-line-pack: justify;
         align-content: space-between;
-    height: 300px;
   }
   .company .company__link {
     width: 210px;
+  }
+}
+
+@media screen and (min-width: 479px) and (max-width: 768px) {
+  .company {
+    height: 300px;
   }
 }
 
