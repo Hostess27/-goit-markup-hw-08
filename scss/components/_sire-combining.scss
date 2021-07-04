@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
 
     @media screen and (min-width: 0px) and (max-width: 767px) {
         li {
@@ -42,7 +41,7 @@
 
 a.site-combining__link.link {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -77,7 +76,6 @@ flex-direction: column;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-list {
-   
     &:hover {
         .text-combining {
             transform: translateY(0);
