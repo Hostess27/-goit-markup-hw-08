@@ -19,7 +19,7 @@
 }
 .form__mail {
     
-    display: inline-block;
+    display: block;
     
     height: 50px;
    margin-bottom: 20px;
@@ -31,12 +31,17 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
-    @media screen and (min-width: 480px) {
-        width: 358px;
+    @media screen and (max-width: 479px) {
+       width: 100%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
         margin-right: 12px;
         margin-bottom: 0;
+        width: 358px;
     }
 }

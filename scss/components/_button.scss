@@ -13,6 +13,11 @@
     color: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    @media screen and (max-width: 479px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .hero__button {
@@ -30,18 +35,18 @@
 }
 
 .site-option {
-	.site-option__button {
-		&:hover {
-			background-color: var(--accent-color);
-			color: var(--white);
-			@extend %shadow;
-			border-radius: 4px;
-		}
-		&:focus {
-			background-color: var(--accent-color);
-			color: var(--white);
-			@extend %shadow;
-			border-radius: 4px;
-		}
-	}
+    .site-option__button {
+        &:hover {
+            background-color: var(--accent-color);
+            color: var(--white);
+            @extend %shadow;
+            border-radius: 4px;
+        }
+        &:focus {
+            background-color: var(--accent-color);
+            color: var(--white);
+            @extend %shadow;
+            border-radius: 4px;
+        }
+    }
 }

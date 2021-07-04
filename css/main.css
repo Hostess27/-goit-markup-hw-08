@@ -446,7 +446,7 @@ svg {
   font-size: 28px;
   line-height: 1.17;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   text-align: center;
@@ -458,6 +458,7 @@ svg {
     font-size: 36px;
     line-height: 1.16;
     font-weight: 700;
+    margin-bottom: 50px;
   }
 }
 
@@ -648,6 +649,7 @@ svg {
 
 .mobile-contact__link--tell {
   display: block;
+  font-weight: 500;
   margin-bottom: 32px;
   font-size: 27px;
   line-height: 1.17;
@@ -663,6 +665,7 @@ svg {
 
 .mobile-contact__link--mail {
   display: block;
+  font-weight: 500;
   margin-bottom: 64px;
   font-size: 20px;
   line-height: 1, 16;
@@ -700,6 +703,7 @@ svg {
 }
 
 .mobile-media__link {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.22px;
   letter-spacing: 0.02em;
@@ -876,6 +880,12 @@ svg {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .adds {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .adds {
     margin-right: 70px;
@@ -975,6 +985,12 @@ svg {
   .plea {
     margin-right: 93px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .plea {
+    text-align: center;
   }
 }
 
@@ -1163,7 +1179,7 @@ svg {
 }
 
 .form__mail {
-  display: inline-block;
+  display: block;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px 16px;
@@ -1175,9 +1191,15 @@ svg {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .form__mail {
-    width: 358px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form__mail {
+    width: 450px;
   }
 }
 
@@ -1185,6 +1207,7 @@ svg {
   .form__mail {
     margin-right: 12px;
     margin-bottom: 0;
+    width: 358px;
   }
 }
 
@@ -1203,6 +1226,13 @@ svg {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 479px) {
+  .input-button {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .hero__button {
@@ -1284,6 +1314,12 @@ svg {
   margin: 0 auto 30px;
 }
 
+@media screen and (min-width: 0px) {
+  .hero__title {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
@@ -1297,9 +1333,9 @@ svg {
   }
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
-    margin-bottom: 20px;
+    max-width: 360px;
   }
 }
 
@@ -1334,9 +1370,9 @@ svg {
       flex-basis: 270px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
   .feature__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1396,6 +1432,12 @@ svg {
   line-height: 1.7;
   margin-top: 0;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1200px) {
+  .section--none {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1475,14 +1517,19 @@ svg {
 
 .team__list {
   margin-top: 0;
-  margin-bottom: 30px;
   background-color: var(--white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .team__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1495,14 +1542,21 @@ svg {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
   }
+  .team__list:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .team__list {
-    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-preferred-size: calc((100% - 60px) / 4);
         flex-basis: calc((100% - 60px) / 4);
   }
@@ -1670,6 +1724,12 @@ svg {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .site-option {
+    margin-bottom: 30px;
+  }
+}
+
 .site-option .site-option__button {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -1708,12 +1768,15 @@ svg {
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .site-combining li {
+    width: 100%;
+  }
   .site-combining li:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-combining {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1742,6 +1805,23 @@ svg {
 .site-combining__images {
   position: relative;
   overflow: hidden;
+}
+
+a.site-combining__link.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.line-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .site-combining__link:hover {
@@ -1838,6 +1918,12 @@ svg {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
 .modal__title {
   height: 23px;
   margin-bottom: 12px;
@@ -1846,12 +1932,6 @@ svg {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-@media screen and (min-width: 768px) {
-  .modal__title {
-    width: 448px;
-  }
 }
 
 .modal__button {
@@ -1952,13 +2032,13 @@ svg {
 }
 
 .checkbox-like__documents {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .checkbox-like__documents {
     font-size: 14px;
   }
@@ -1991,12 +2071,6 @@ svg {
 .modal-list__comments:focus {
   outline: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-@media screen and (min-width: 767px) {
-  .modal-list__comments {
-    width: 448px;
-  }
 }
 
 .checkbox-label {

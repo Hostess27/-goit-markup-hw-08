@@ -57,6 +57,10 @@
     color: var(--white);
     margin: 0 auto 30px;
 
+    @media screen and (min-width: 0px) {
+        margin-bottom: 20px;
+    }
+
     @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1.36;
@@ -68,7 +72,7 @@
         max-width: 696px;
     }
 
-    @media screen and (min-width: 0px) {
-        margin-bottom: 20px;
-    }
+   @media screen and (max-width: 1199px) {
+       max-width: 360px;
+}
 }

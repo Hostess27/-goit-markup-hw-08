@@ -46,11 +46,14 @@
         flex-direction: column;
         align-items: center;
     }
-
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
         margin-bottom: 0;
     }
+
 }
 
 .adds-like {
@@ -110,6 +113,10 @@
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
         margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
     }
 }
 
